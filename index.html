@@ -87,7 +87,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13a411F7xF">今天最令我感动的</a></p>
-<h2 id="关于容器的一些理解"><a href="#关于容器的一些理解" class="headerlink" title="关于容器的一些理解"></a>关于容器的一些理解</h2><p><img src="evernotecid://FE6E1E69-C2A9-499F-9762-B19480046B93/appyinxiangcom/31596033/ENResource/p67" alt="f0248297659defd1c166cdc9eec8fffa.png"></p>
+<h2 id="关于容器的一些理解"><a href="#关于容器的一些理解" class="headerlink" title="关于容器的一些理解"></a>关于容器的一些理解</h2><p><img src="2020-11-25/rongqi.png" alt="容器"></p>
 <h5 id="1-Java-容器都有哪些？"><a href="#1-Java-容器都有哪些？" class="headerlink" title="1 Java 容器都有哪些？"></a>1 Java 容器都有哪些？</h5><p>Java 容器分为 Collection 和 Map 两大类，其下又有很多子类，如下所示：</p>
 <pre><code>       Collection：
         List
@@ -107,7 +107,7 @@
         ConcurrentHashMap
         Hashtable</code></pre>
 <h5 id="2-Collection-和-Collections-有什么区别？"><a href="#2-Collection-和-Collections-有什么区别？" class="headerlink" title="2. Collection 和 Collections 有什么区别？"></a>2. Collection 和 Collections 有什么区别？</h5><p>Collection 是一个集合接口，它提供了对集合对象进行基本操作的通用接口方法，所有集合都是它的子类，比如 List、Set 等。<br>Collections 是一个包装类，包含了很多静态方法，不能被实例化，就像一个工具类，比如提供的排序方法： Collections. sort(list)。</p>
-<h5 id="3-List、Set、Map-之间的区别是什么？"><a href="#3-List、Set、Map-之间的区别是什么？" class="headerlink" title="3. List、Set、Map 之间的区别是什么？"></a>3. List、Set、Map 之间的区别是什么？</h5><p>List、Set、Map 的区别主要体现在两个方面：元素是否有序、是否允许元素重复。<br>三者之间的区别，如下表：<br>&lt;img src=”<a target="_blank" rel="noopener" href="https://pic3.zhimg.com/v2-c5c9fb0e2e52cd762f1bf1a73216c6c2_b.jpg&quot;">https://pic3.zhimg.com/v2-c5c9fb0e2e52cd762f1bf1a73216c6c2_b.jpg&quot;</a> data-caption=”” data-size=”normal” data-rawwidth=”950” data-rawheight=”383” class=”origin_image zh-lightbox-thumb” width=”950” data-original=”<a target="_blank" rel="noopener" href="https://pic3.zhimg.com/v2-c5c9fb0e2e52cd762f1bf1a73216c6c2_r.jpg&quot;/">https://pic3.zhimg.com/v2-c5c9fb0e2e52cd762f1bf1a73216c6c2_r.jpg&quot;/</a>&gt;<br><img src="evernotecid://FE6E1E69-C2A9-499F-9762-B19480046B93/appyinxiangcom/31596033/ENNote/p85?hash=c5c9fb0e2e52cd762f1bf1a73216c6c2" alt="c5c9fb0e2e52cd762f1bf1a73216c6c2.png"></p>
+<h5 id="3-List、Set、Map-之间的区别是什么？"><a href="#3-List、Set、Map-之间的区别是什么？" class="headerlink" title="3. List、Set、Map 之间的区别是什么？"></a>3. List、Set、Map 之间的区别是什么？</h5><p>List、Set、Map 的区别主要体现在两个方面：元素是否有序、是否允许元素重复。<br>三者之间的区别，如下表：</p>
 <h5 id="4-HashMap-和-Hashtable-有什么区别？"><a href="#4-HashMap-和-Hashtable-有什么区别？" class="headerlink" title="4. HashMap 和 Hashtable 有什么区别？"></a>4. HashMap 和 Hashtable 有什么区别？</h5><p>HashMap是非线程安全的，HashTable是线程安全的。<br>HashMap的键和值都允许有null值存在，而HashTable则不行。<br>因为线程安全的问题，HashMap效率比HashTable的要高。<br>Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。<br>一般现在不建议用HashTable,<br>①是HashTable是遗留类，内部实现很多没优化和冗余。<br>②即使在多线程环境下，现在也有同步的ConcurrentHashMap替代，没有必要因为是多线程而用HashTable。</p>
 <h5 id="5-如何决定使用-HashMap-还是-TreeMap？"><a href="#5-如何决定使用-HashMap-还是-TreeMap？" class="headerlink" title="5. 如何决定使用 HashMap 还是 TreeMap？"></a>5. 如何决定使用 HashMap 还是 TreeMap？</h5><p>对于在 Map 中插入、删除、定位一个元素这类操作，HashMap 是最好的选择，因为相对而言 HashMap 的插入会更快，但如果你要对一个 key 集合进行有序的遍历，那 TreeMap 是更好的选择。<br>&lt;img src=”<a target="_blank" rel="noopener" href="https://pic3.zhimg.com/v2-e1f468056481fc3fe84c6e0cf016cb6a_b.jpg&quot;">https://pic3.zhimg.com/v2-e1f468056481fc3fe84c6e0cf016cb6a_b.jpg&quot;</a> data-caption=”” data-size=”normal” data-rawwidth=”632” data-rawheight=”136” class=”origin_image zh-lightbox-thumb” width=”632” data-original=”<a target="_blank" rel="noopener" href="https://pic3.zhimg.com/v2-e1f468056481fc3fe84c6e0cf016cb6a_r.jpg&quot;/">https://pic3.zhimg.com/v2-e1f468056481fc3fe84c6e0cf016cb6a_r.jpg&quot;/</a>&gt;<br><img src="evernotecid://FE6E1E69-C2A9-499F-9762-B19480046B93/appyinxiangcom/31596033/ENNote/p85?hash=e1f468056481fc3fe84c6e0cf016cb6a" alt="e1f468056481fc3fe84c6e0cf016cb6a.png"></p>
 <h5 id="6-说一下-HashMap-的实现原理？"><a href="#6-说一下-HashMap-的实现原理？" class="headerlink" title="6. 说一下 HashMap 的实现原理？"></a>6. 说一下 HashMap 的实现原理？</h5><p>HashMap 基于 Hash 算法实现的，我们通过 put(key,value)存储，get(key)来获取。当传入 key 时，HashMap 会根据 key. hashCode() 计算出 hash 值，根据 hash 值将 value 保存在 bucket 里。当计算出的 hash 值相同时，我们称之为 hash 冲突，HashMap 的做法是用链表和红黑树存储相同 hash 值的 value。当 hash 冲突的个数比较少时，使用链表否则使用红黑树。</p>
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/25/2020-11-25/" data-id="ckhw85w5x00002q9k1a637pmu" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/25/2020-11-25/" data-id="ckhwz7jev00001b9k9v100gfw" class="article-share-link">Share</a>
       
       
     </footer>
